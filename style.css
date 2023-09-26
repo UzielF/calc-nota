@@ -4,7 +4,7 @@ body {
 
 .main {
     background-color: aliceblue;
-    width: 70vw;
+    width: 85vw;
     height: 96vh;
     border-radius: 15px;
     box-shadow: 2px 2px 5px black;
@@ -20,9 +20,80 @@ label {
     font: bold 20pt Arial;
 }
 
-.w {
+.wrapper-general {
     text-align: center;
     margin: auto;
     position: relative;
     top: 200px;
+}
+
+.wrapper-input {
+    background-color: #DDD;
+    border-radius: 15px;
+    width: 280px;
+    margin: auto;
+}
+
+center {
+    position: relative;
+    top: 8px;
+}
+
+.wrapper-output {
+    margin: auto;
+    border-radius: 15px;
+    width: 80vw;
+    position: relative;
+    top: 15px;
+}
+
+@media screen and (min-width: 1280px) {
+    body {
+        background-color: #236;
+    }
+
+    .main {
+        background-color: aliceblue;
+        width: 70vw;
+        height: 96vh;
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px black;
+        position: relative;
+        margin: auto;
+    }
+
+    label {
+        font: normal 16pt Arial;
+    }
+
+    #res {
+        font: bold 20pt Arial;
+    }
+
+    .wrapper-general {
+        text-align: center;
+        margin: auto;
+        position: relative;
+        top: 200px;
+    }
+
+    .wrapper-input {
+        background-color: #DDD;
+        border-radius: 15px;
+        width: 500px;
+        margin: auto;
+    }
+
+    center {
+        position: relative;
+        top: 8px;
+    }
+
+    .wrapper-output {
+        margin: auto;
+        border-radius: 15px;
+        width: 65vw;
+        position: relative;
+        top: 15px;
+    }
 }

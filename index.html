@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calcular a nota que você ainda precisa!</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="main">
-        <div class="w">
-            <label for="nota1">Nota 1:</label>
-            <input type="text" name="nota1" id="nota1"><br>
-            <label for="nota2">Nota 2:</label>
-            <input type="text" name="nota2" id="nota2"><br>
-            <input type="button" value="CALCULAR" id="calc"><br><br>
-            <span id="res"></span>
+        <div class="wrapper-general">
+            <div class="wrapper-input">
+                <center>
+                    <label for="nota1">Nota do primeiro trimestre:</label>
+                    <input type="text" name="nota1" id="nota1"><br>
+                    <label for="nota2">Nota do segundo trimestre:</label>
+                    <input type="text" name="nota2" id="nota2"><br><br>
+                </center>
+            </div>
+            <div class="wrapper-output">
+                <span id="res"></span>
+            </div>
         </div>
     </section>
     <script src="js/main.js"></script>
