@@ -42,7 +42,7 @@ function calc(): void {
 
     n1 *= nota1.length == 1 ? 10 : 1;
     n2 *= nota2.length == 1 ? 10 : 1;
-    n3 *= nota2.length == 1 ? 10 : 1;
+    n3 *= nota3.length == 1 ? 10 : 1;
 
     var soma = 3*(n1 + n2) + 4*n3;
     var final = getDecimal(soma, 2);
