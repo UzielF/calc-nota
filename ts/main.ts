@@ -47,9 +47,9 @@ function calc(): void {
     var soma = 3*(n1 + n2) + 4*n3;
     var final = getDecimal(soma, 2);
     
-    if (soma >= 580) return escrever(`Parabéns! Você foi aprovado nessa diciplina! Sua nota final foi ${final}.`, COLORS.Approved);
+    if (soma >= 600) return escrever(`Parabéns! Você foi aprovado nessa diciplina! Sua nota final foi ${final}.`, COLORS.Approved);
     else {
-        var falta = parseInt(((580 - 3*(n1 + n2)) / 4 + 0.5).toString());
+        var falta = parseInt(((600 - 3*(n1 + n2)) / 4 + 0.5).toString());
         var falta_str = getDecimal(falta, 1);
 
         if (falta > 100) return escrever(`Infelizmente, você foi reprovado nessa disciplina. Você precisava de ${falta_str} nesse último trimestre.`, COLORS.Reproved);

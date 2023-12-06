@@ -47,12 +47,6 @@ center {
     top: 15px;
 }
 
-#obs {
-    margin: auto;
-    text-justify: auto;
-    font: bold 16pt Arial;
-}
-
 @media screen and (min-width: 1280px) {
     body {
         background-color: #236;
@@ -101,11 +95,5 @@ center {
         width: 65vw;
         position: relative;
         top: 15px;
-    }
-
-    #obs {
-        margin: auto;
-        text-justify: auto;
-        font: bold 16pt Arial;
     }
 }
