@@ -1,29 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcular a nota que você ainda precisa!</title>
+<html lang="pt-br">
 
-    <link rel="stylesheet" href="style.css">
+<head>
+    <title>Calcule a sua nota atual!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link media="screen and (min-width: 960px)" href="widescreen.css" rel="stylesheet">
+    <link media="screen and (max-width: 959px)" href="smallscreen.css" rel="stylesheet">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" src="libraries/mathjax@3/mathjax@3.js"></script>
 </head>
+
 <body>
-    <section class="main">
-        <div class="wrapper-general">
-            <div class="wrapper-input">
-                <center>
-                    <label for="nota1">Nota do primeiro trimestre:</label>
-                    <input type="text" name="nota1" id="nota1"><br>
-                    <label for="nota2">Nota do segundo trimestre:</label>
-                    <input type="text" name="nota2" id="nota2"><br>
-                    <label for="nota3">Nota do terceiro trimestre:</label>
-                    <input type="text" name="nota3" id="nota3"><br><br>
-                </center>
-            </div>
-            <div class="wrapper-output">
-                <span id="res"></span>
+    <section class="content">
+        <div class="request-wrapper">
+            <div id="warning">Insira o aproveitamento da disciplina nos campos abaixo. (Também é possível deixar o campo em branco)</div><br>
+
+            <div class="inputs-wrapper">
+                <label for="trim1">1º trimestre: </label>
+                <input type="text" name="trim1" id="trim1"><br><hr>
+                <label for="eac1">E.A.C. do 1º trimestre: </label>
+                <input type="text" name="eac1" id="eac1"><br><hr>
+                <label for="trim2">2º trimestre: </label>
+                <input type="text" name="trim2" id="trim2"><br><hr>
+                <label for="eac2">E.A.C. do 2º trimestre: </label>
+                <input type="text" name="eac2" id="eac2"><br><hr>
+                <label for="trim3">3º trimestre: </label>
+                <input type="text" name="trim3" id="trim3"><br><hr>
+                <label for="eac3">E.A.C. do 3º trimestre: </label>
+                <input type="text" name="eac3" id="eac3"><br>
             </div>
         </div>
+        <div class="result-wrapper">
+            <div class="result-div math-representation"></div>
+            <div class="result-div student-state"></div>
+            <div class="result-div student-opportunity"></div>
+        </div>
     </section>
+    <span id="copyright">2024 &copy; Ziera</span>
+
+    <script src="js/tool.js"></script>
+    <script src="js/input-handler.js"></script>
     <script src="js/main.js"></script>
+</body>
+
 </html>

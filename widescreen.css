@@ -1,0 +1,94 @@
+body {
+  background-color: #050b22;
+  font: normal 20pt Arial;
+}
+
+#copyright {
+    position: fixed;
+    background-color: #123038;
+    padding: 2px;
+    color: black;
+
+    right: 0;
+    bottom: 0;
+
+    border-radius: 15px 0 0 0;
+}
+
+.content {
+    background-color: #b2b8bb;
+    width: 88vw;
+    height: 92vh;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 3px 4px 5px #444;
+
+    display: grid;
+    grid-template-columns: 43.5vw 43.5vw;
+    column-gap: 1vw;
+}
+
+.request-wrapper {
+    font: normal 16pt Arial;
+
+    padding: 22px 30px;
+
+    position: relative;
+}
+
+.inputs-wrapper {
+    background-color: #98a2a8;
+
+    width: 28vw;
+    height: fit-content;
+    padding: 13px;
+    border-radius: 15px;
+
+    position: absolute;
+    left: 80px;
+    bottom: 150px;
+}
+
+.inputs-wrapper input {
+    float: right;
+    width: 100px;
+}
+
+.result-wrapper {
+    font: normal 16pt Arial;
+
+    display: grid;
+    grid-template-rows: 25vh 25vh 25vh;
+    row-gap: 8.5vh;
+}
+
+.result-div {
+    padding: 22px 14px;
+}
+
+.math-representation {
+    background-color: snow;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.student-state {
+    background-color: gray;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.student-opportunity {
+    background-color: gray;
+    border-radius: 15px 0px 15px 0px;
+}
+
+.approved {
+    background-color: lime;
+}
+
+.opportunity {
+    background-color: lightblue;
+}
+
+.failed {
+    background-color: red;
+}

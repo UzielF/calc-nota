@@ -1,0 +1,100 @@
+body {
+    background-color: #050b22;
+    font: normal 20pt Arial;
+    position: relative;
+    margin: 0;
+}
+
+#copyright {
+    position: absolute;
+    background-color: #123038;
+    padding: 2px;
+    color: black;
+
+    right: 0;
+    bottom: -30px;
+
+    border-radius: 15px 0 0 0;
+}
+
+.content {
+    background-color: #b2b8bb;
+    width: 88vw;
+    height: 151vh;
+    margin: 12px auto 30px auto;
+    border-radius: 15px;
+    box-shadow: 3px 4px 5px #444;
+
+    display: grid;
+    grid-template-rows: 70vh 80vh;
+    row-gap: 1vh;
+}
+
+.request-wrapper {
+    width: 88vw;
+    font: normal 16pt Arial;
+    margin: auto;
+    position: relative;
+}
+
+#warning {
+    padding: 13px;
+    text-align: justify;
+}
+
+.inputs-wrapper {
+    background-color: #98a2a8;
+
+    width: 70vw;
+    height: fit-content;
+    padding: 13px;
+    border-radius: 15px;
+
+    margin: auto;
+}
+
+.inputs-wrapper input {
+    width: 100px;
+}
+
+.result-wrapper {
+    font: normal 16pt Arial;
+    width: 88vw;
+    
+    display: grid;
+    grid-template-rows: 24vh 24vh 24vh;
+    row-gap: 4vh;
+}
+
+.result-div {
+    padding: 22px 14px;
+    text-align: justify;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.math-representation {
+    background-color: snow;
+    font-size: 13.2pt;
+    width: 80vw;
+}
+
+.student-state {
+    background-color: gray;
+}
+
+.student-opportunity {
+    background-color: gray;
+}
+
+.approved {
+    background-color: lime;
+}
+
+.opportunity {
+    background-color: lightblue;
+}
+
+.failed {
+    background-color: red;
+}
